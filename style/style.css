@@ -1,0 +1,143 @@
+@charset "UFT-8";
+
+:root{
+    --ghost-white: #d5d5da;
+    --dark: #0D0106;
+    --red-florenct: #FF331F;
+    --light-blue: #657ED4;
+    --blue: #3626A7;
+
+    --color-background: linear-gradient(90deg, var(--blue), var(--light-blue))
+}
+
+*{  
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: 0;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-login{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 30px;
+    gap: 30px;
+    height: fit-content;
+}
+
+#form-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form-header i {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#form-header h1 {
+    font-size: 40px;
+    position: relative;
+}
+
+#form-header h1::before{
+    position: absolute;
+    content: '';
+    width: 45%;
+    background-color: var(--light-blue);
+    height: 4px;
+    bottom: 4px;
+}
+
+#media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 53px;
+}
+
+#media a{
+    margin: 0 16px;
+}
+
+#media img{
+    width: 43px;
+    transition: 0.3s;
+}
+
+#media  img:hover{
+    width: 46px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box{
+    margin-top: 10px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue);
+}
+
+label > .input-field > input {
+    border: solid rgba(0, 0, 0, 0.123);
+    border-radius: 4px;
+    margin-left: 3px;
+    height: 25px;
+    width: 100%;
+    border-bottom: solid var(--light-blue) ;
+
+    padding-left: 4px;
+}
+
+label > .input-field > i {
+    font-size: 22px;
+}
+
+.submits{
+    margin-top: 3px;
+    margin-bottom: 13px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.submits a {
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.submits a:hover {
+    text-decoration: underline ;
+}
+
+input[type=submit]{
+    height: 40px;
+    background: var(--color-background);
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
